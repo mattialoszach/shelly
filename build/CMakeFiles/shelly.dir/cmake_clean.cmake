@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/shelly.dir/src/main.cpp.o"
+  "CMakeFiles/shelly.dir/src/main.cpp.o.d"
+  "shelly"
+  "shelly.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/shelly.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

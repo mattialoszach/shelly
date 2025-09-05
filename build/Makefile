@@ -129,6 +129,30 @@ shelly/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/build
 .PHONY : shelly/fast
 
+src/Recorder.o: src/Recorder.cpp.o
+.PHONY : src/Recorder.o
+
+# target to build an object file
+src/Recorder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/Recorder.cpp.o
+.PHONY : src/Recorder.cpp.o
+
+src/Recorder.i: src/Recorder.cpp.i
+.PHONY : src/Recorder.i
+
+# target to preprocess a source file
+src/Recorder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/Recorder.cpp.i
+.PHONY : src/Recorder.cpp.i
+
+src/Recorder.s: src/Recorder.cpp.s
+.PHONY : src/Recorder.s
+
+# target to generate assembly for a file
+src/Recorder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/Recorder.cpp.s
+.PHONY : src/Recorder.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... shelly"
+	@echo "... src/Recorder.o"
+	@echo "... src/Recorder.i"
+	@echo "... src/Recorder.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

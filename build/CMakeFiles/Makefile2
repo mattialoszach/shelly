@@ -85,12 +85,12 @@ clean: CMakeFiles/shelly.dir/clean
 CMakeFiles/shelly.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=1,2 "Built target shelly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=1,2,3 "Built target shelly"
 .PHONY : CMakeFiles/shelly.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shelly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shelly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles 0
 .PHONY : CMakeFiles/shelly.dir/rule
@@ -102,7 +102,7 @@ shelly: CMakeFiles/shelly.dir/rule
 # codegen rule for target.
 CMakeFiles/shelly.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=1,2 "Finished codegen for target shelly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target shelly"
 .PHONY : CMakeFiles/shelly.dir/codegen
 
 # clean rule for target.

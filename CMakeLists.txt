@@ -18,7 +18,8 @@ include_directories(
 
 add_executable(shelly
   src/main.cpp
-  # füge hier deine weiteren .cpp-Dateien hinzu wenn vorhanden
+  src/Recorder.cpp
+  # add all additional .cpp-fies if existing
 )
 
 target_link_libraries(shelly

@@ -20,6 +20,7 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -34,10 +35,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/opt/anaconda3/condabin/uname"
       - "/Users/mattialoszach/.local/bin/uname"
       - "/opt/homebrew/bin/uname"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/uname"
@@ -47,6 +48,8 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -63,7 +66,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -95,6 +97,7 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -109,10 +112,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/opt/anaconda3/condabin/gmake"
       - "/Users/mattialoszach/.local/bin/gmake"
       - "/opt/homebrew/bin/gmake"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/gmake"
@@ -127,9 +130,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
       - "/Library/Apple/usr/bin/gmake"
-      - "/opt/anaconda3/condabin/gmake"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/gmake"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/gmake"
+      - "/opt/anaconda3/condabin/make"
       - "/Users/mattialoszach/.local/bin/make"
       - "/opt/homebrew/bin/make"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/make"
@@ -139,6 +142,8 @@ events:
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -155,80 +160,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
-        - "/Users/mattialoszach/Documents/dev/flutter/bin"
-        - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "CXX compiler"
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c++"
-      - "g++"
-      - "cl"
-      - "bcc"
-      - "icpx"
-      - "icx"
-      - "clang++"
-    candidate_directories:
-      - "/Users/mattialoszach/.local/bin/"
-      - "/opt/homebrew/bin/"
-      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
-      - "/Users/mattialoszach/Documents/dev/flutter/bin/"
-      - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
-    searched_directories:
-      - "/Users/mattialoszach/.local/bin/c++"
-      - "/opt/homebrew/bin/c++"
-      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/c++"
-      - "/opt/homebrew/sbin/c++"
-      - "/usr/local/bin/c++"
-      - "/System/Cryptexes/App/usr/bin/c++"
-    found: "/usr/bin/c++"
-    search_context:
-      ENV{PATH}:
-        - "/Users/mattialoszach/.local/bin"
-        - "/opt/homebrew/bin"
-        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/Library/Apple/usr/bin"
-        - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -259,6 +190,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -275,7 +208,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -288,7 +220,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
+      Compiler: /usr/bin/clang++ 
       Build flags: 
       Id flags:  
       
@@ -308,7 +240,7 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
+      Detecting CXX compiler apple sysroot: "/usr/bin/clang++" "-E" "apple-sdk.cpp"
         # 1 "apple-sdk.cpp"
         # 1 "<built-in>" 1
         # 1 "<built-in>" 3
@@ -363,6 +295,7 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -376,12 +309,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -398,7 +332,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -423,6 +356,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -436,12 +370,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -458,7 +393,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -483,6 +417,7 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -496,12 +431,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -518,7 +454,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -543,6 +478,7 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -556,12 +492,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -578,7 +515,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -603,6 +539,7 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -616,12 +553,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -638,7 +576,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -663,6 +600,7 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -676,12 +614,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -698,7 +637,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -723,6 +661,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -736,11 +675,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
       - "/usr/bin/objcopy"
+      - "/opt/anaconda3/condabin/objcopy"
       - "/Users/mattialoszach/.local/bin/objcopy"
       - "/opt/homebrew/bin/objcopy"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/objcopy"
@@ -754,12 +693,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
       - "/Library/Apple/usr/bin/objcopy"
-      - "/opt/anaconda3/condabin/objcopy"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/objcopy"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/objcopy"
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -776,7 +716,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -801,6 +740,7 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -814,11 +754,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
       - "/usr/bin/readelf"
+      - "/opt/anaconda3/condabin/readelf"
       - "/Users/mattialoszach/.local/bin/readelf"
       - "/opt/homebrew/bin/readelf"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/readelf"
@@ -832,12 +772,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
       - "/Library/Apple/usr/bin/readelf"
-      - "/opt/anaconda3/condabin/readelf"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/readelf"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/readelf"
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -854,7 +795,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -879,6 +819,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -892,11 +833,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/opt/anaconda3/condabin/dlltool"
       - "/Users/mattialoszach/.local/bin/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/dlltool"
@@ -910,12 +851,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
       - "/Library/Apple/usr/bin/dlltool"
-      - "/opt/anaconda3/condabin/dlltool"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/dlltool"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/dlltool"
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -932,7 +874,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -957,6 +898,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -970,11 +912,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
       - "/usr/bin/addr2line"
+      - "/opt/anaconda3/condabin/addr2line"
       - "/Users/mattialoszach/.local/bin/addr2line"
       - "/opt/homebrew/bin/addr2line"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/addr2line"
@@ -988,12 +930,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
       - "/Library/Apple/usr/bin/addr2line"
-      - "/opt/anaconda3/condabin/addr2line"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/addr2line"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/addr2line"
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1010,7 +953,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1035,6 +977,7 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -1048,11 +991,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/opt/anaconda3/condabin/tapi"
       - "/Users/mattialoszach/.local/bin/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/tapi"
@@ -1066,12 +1009,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
       - "/Library/Apple/usr/bin/tapi"
-      - "/opt/anaconda3/condabin/tapi"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/tapi"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1088,7 +1032,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1112,6 +1055,7 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -1126,10 +1070,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/opt/anaconda3/condabin/install_name_tool"
       - "/Users/mattialoszach/.local/bin/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/install_name_tool"
@@ -1139,6 +1083,8 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1155,7 +1101,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1169,8 +1114,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2"
-      binary: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2"
+      source: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4"
+      binary: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1183,19 +1128,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2'
+        Change Dir: '/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_99e2e/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_99e2e.dir/build.make CMakeFiles/cmTC_99e2e.dir/build
-        Building CXX object CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_78790/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_78790.dir/build.make CMakeFiles/cmTC_78790.dir/build
+        Building CXX object CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2 -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4 -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.6.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
@@ -1209,13 +1154,13 @@ events:
          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_99e2e
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99e2e.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_78790
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78790.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_99e2e -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_78790 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.5
         BUILD 01:45:05 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -1227,7 +1172,7 @@ events:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_99e2e
+        /usr/bin/clang++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_78790
         
       exitCode: 0
   -
@@ -1271,19 +1216,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2']
+        ignore line: [Change Dir: '/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_99e2e/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_99e2e.dir/build.make CMakeFiles/cmTC_99e2e.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_78790/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_78790.dir/build.make CMakeFiles/cmTC_78790.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2 -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-JCTXN2 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4 -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-1e7oj4 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1297,13 +1242,13 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_99e2e]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99e2e.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_78790]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78790.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_99e2e -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_78790 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1320,12 +1265,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_99e2e] ==> ignore
+          arg [cmTC_78790] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_99e2e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_78790.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -1379,6 +1324,7 @@ events:
       - "pkg-config"
       - "pkgconf"
     candidate_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -1393,7 +1339,6 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
@@ -1430,11 +1375,15 @@ events:
       - "/Applications/Xcode.app/Contents/Applications/"
       - "/Applications/Xcode.app/Contents/Developer/Applications/"
     searched_directories:
+      - "/opt/anaconda3/condabin/pkg-config"
+      - "/opt/anaconda3/condabin/pkgconf"
       - "/Users/mattialoszach/.local/bin/pkg-config"
       - "/Users/mattialoszach/.local/bin/pkgconf"
     found: "/opt/homebrew/bin/pkg-config"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1451,7 +1400,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1500,6 +1448,8 @@ events:
     found: "/opt/homebrew/Cellar/portaudio/19.7.0/lib/libportaudio.dylib"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1516,7 +1466,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1572,6 +1521,8 @@ events:
     found: "/opt/homebrew/Cellar/libsndfile/1.2.2_1/lib/libsndfile.dylib"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1588,7 +1539,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1663,6 +1613,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/opt/anaconda3/condabin/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/anaconda3/condabin/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/Users/mattialoszach/.local/CURLConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1724,14 +1682,6 @@ events:
         reason: "no_exist"
       -
         path: "/Library/Apple/usr/curl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/anaconda3/condabin/CURLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/anaconda3/condabin/curl-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -1833,6 +1783,8 @@ events:
     found: null
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1849,7 +1801,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1906,6 +1857,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -1922,7 +1875,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -1975,6 +1927,7 @@ events:
     names:
       - "curl"
     candidate_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -1986,7 +1939,6 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2002,6 +1954,7 @@ events:
       - "/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -2013,11 +1966,12 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -2034,7 +1988,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -2083,6 +2036,7 @@ events:
     names:
       - "curl/curl.h"
     candidate_directories:
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -2097,7 +2051,6 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
@@ -2130,6 +2083,7 @@ events:
       - "/Network/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
+      - "/opt/anaconda3/condabin/curl.framework/Headers/curl.h"
       - "/Users/mattialoszach/.local/bin/curl.framework/Headers/curl.h"
       - "/opt/homebrew/bin/curl.framework/Headers/curl.h"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/curl.framework/Headers/curl.h"
@@ -2144,7 +2098,6 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/curl.framework/Headers/curl.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/curl.framework/Headers/curl.h"
       - "/Library/Apple/usr/bin/curl.framework/Headers/curl.h"
-      - "/opt/anaconda3/condabin/curl.framework/Headers/curl.h"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/curl.framework/Headers/curl.h"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/curl.framework/Headers/curl.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/curl.framework/Headers/curl.h"
@@ -2176,6 +2129,7 @@ events:
       - "/Library/Frameworks/curl.framework/Headers/curl.h"
       - "/Network/Library/Frameworks/curl.framework/Headers/curl.h"
       - "/System/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/opt/anaconda3/condabin/curl/curl.h"
       - "/Users/mattialoszach/.local/bin/curl/curl.h"
       - "/opt/homebrew/bin/curl/curl.h"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/curl/curl.h"
@@ -2190,12 +2144,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/curl/curl.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/curl/curl.h"
       - "/Library/Apple/usr/bin/curl/curl.h"
-      - "/opt/anaconda3/condabin/curl/curl.h"
       - "/Users/mattialoszach/Documents/dev/flutter/bin/curl/curl.h"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/curl/curl.h"
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -2212,7 +2167,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -2267,6 +2221,7 @@ events:
       - "libcurl_a"
     candidate_directories:
       - "/usr/lib/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -2278,7 +2233,6 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2300,6 +2254,12 @@ events:
       - "/usr/lib/"
       - "/usr/lib/"
       - "/usr/lib/"
+      - "/opt/anaconda3/condabin/"
+      - "/opt/anaconda3/condabin/"
+      - "/opt/anaconda3/condabin/"
+      - "/opt/anaconda3/condabin/"
+      - "/opt/anaconda3/condabin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/Users/mattialoszach/.local/bin/"
@@ -2366,12 +2326,6 @@ events:
       - "/Library/Apple/usr/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
-      - "/opt/anaconda3/condabin/"
-      - "/opt/anaconda3/condabin/"
-      - "/opt/anaconda3/condabin/"
-      - "/opt/anaconda3/condabin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
@@ -2381,6 +2335,8 @@ events:
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd"
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -2397,7 +2353,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"
@@ -2448,6 +2403,7 @@ events:
       - "libcurl-d"
     candidate_directories:
       - "/usr/lib/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
       - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
@@ -2459,7 +2415,6 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2477,6 +2432,8 @@ events:
     searched_directories:
       - "/usr/lib/"
       - "/usr/lib/"
+      - "/opt/anaconda3/condabin/"
+      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/Users/mattialoszach/.local/bin/"
       - "/opt/homebrew/bin/"
@@ -2499,8 +2456,6 @@ events:
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
       - "/Library/Apple/usr/bin/"
-      - "/opt/anaconda3/condabin/"
-      - "/opt/anaconda3/condabin/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
@@ -2532,6 +2487,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/opt/anaconda3/condabin"
+        - "/Users/mattialoszach/.local/bin"
         - "/Users/mattialoszach/.local/bin"
         - "/opt/homebrew/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
@@ -2548,7 +2505,6 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/Library/Apple/usr/bin"
         - "/opt/anaconda3/condabin"
-        - "/Users/mattialoszach/.local/bin"
         - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
         - "/Users/mattialoszach/Documents/dev/flutter/bin"
         - "/Users/mattialoszach/Applications/iTerm.app/Contents/Resources/utilities"

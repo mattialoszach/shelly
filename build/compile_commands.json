@@ -10,5 +10,11 @@
   "command": "/usr/bin/clang++  -I/Users/mattialoszach/Documents/Code/shelly/include -I/Users/mattialoszach/Documents/Code/shelly/third_party -isystem /opt/homebrew/Cellar/portaudio/19.7.0/include -isystem /opt/homebrew/Cellar/libsndfile/1.2.2_1/include -isystem /opt/homebrew/Cellar/flac/1.5.0/include -isystem /opt/homebrew/Cellar/libvorbis/1.3.7/include -isystem /opt/homebrew/Cellar/libogg/1.3.6/include -isystem /opt/homebrew/Cellar/opus/1.5.2/include/opus -isystem /opt/homebrew/Cellar/mpg123/1.33.2/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/shelly.dir/src/Recorder.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp",
   "file": "/Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp",
   "output": "CMakeFiles/shelly.dir/src/Recorder.cpp.o"
+},
+{
+  "directory": "/Users/mattialoszach/Documents/Code/shelly/build",
+  "command": "/usr/bin/clang++  -I/Users/mattialoszach/Documents/Code/shelly/include -I/Users/mattialoszach/Documents/Code/shelly/third_party -isystem /opt/homebrew/Cellar/portaudio/19.7.0/include -isystem /opt/homebrew/Cellar/libsndfile/1.2.2_1/include -isystem /opt/homebrew/Cellar/flac/1.5.0/include -isystem /opt/homebrew/Cellar/libvorbis/1.3.7/include -isystem /opt/homebrew/Cellar/libogg/1.3.6/include -isystem /opt/homebrew/Cellar/opus/1.5.2/include/opus -isystem /opt/homebrew/Cellar/mpg123/1.33.2/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/shelly.dir/src/WavWriter.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp",
+  "file": "/Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp",
+  "output": "CMakeFiles/shelly.dir/src/WavWriter.cpp.o"
 }
 ]

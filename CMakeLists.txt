@@ -19,6 +19,7 @@ include_directories(
 add_executable(shelly
   src/main.cpp
   src/Recorder.cpp
+  src/WavWriter.cpp
   # add all additional .cpp-fies if existing
 )
 

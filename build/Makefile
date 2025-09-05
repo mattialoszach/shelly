@@ -153,6 +153,30 @@ src/Recorder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/Recorder.cpp.s
 .PHONY : src/Recorder.cpp.s
 
+src/WavWriter.o: src/WavWriter.cpp.o
+.PHONY : src/WavWriter.o
+
+# target to build an object file
+src/WavWriter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WavWriter.cpp.o
+.PHONY : src/WavWriter.cpp.o
+
+src/WavWriter.i: src/WavWriter.cpp.i
+.PHONY : src/WavWriter.i
+
+# target to preprocess a source file
+src/WavWriter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WavWriter.cpp.i
+.PHONY : src/WavWriter.cpp.i
+
+src/WavWriter.s: src/WavWriter.cpp.s
+.PHONY : src/WavWriter.s
+
+# target to generate assembly for a file
+src/WavWriter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WavWriter.cpp.s
+.PHONY : src/WavWriter.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/Recorder.o"
 	@echo "... src/Recorder.i"
 	@echo "... src/Recorder.s"
+	@echo "... src/WavWriter.o"
+	@echo "... src/WavWriter.i"
+	@echo "... src/WavWriter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

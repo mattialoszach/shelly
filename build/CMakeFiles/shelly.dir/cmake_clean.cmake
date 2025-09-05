@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/shelly.dir/src/Recorder.cpp.o"
   "CMakeFiles/shelly.dir/src/Recorder.cpp.o.d"
+  "CMakeFiles/shelly.dir/src/WavWriter.cpp.o"
+  "CMakeFiles/shelly.dir/src/WavWriter.cpp.o.d"
   "CMakeFiles/shelly.dir/src/main.cpp.o"
   "CMakeFiles/shelly.dir/src/main.cpp.o.d"
   "shelly"

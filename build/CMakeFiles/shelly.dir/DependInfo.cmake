@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp" "CMakeFiles/shelly.dir/src/Recorder.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/Recorder.cpp.o.d"
+  "/Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp" "CMakeFiles/shelly.dir/src/WavWriter.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/WavWriter.cpp.o.d"
   "/Users/mattialoszach/Documents/Code/shelly/src/main.cpp" "CMakeFiles/shelly.dir/src/main.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/main.cpp.o.d"
   )
 

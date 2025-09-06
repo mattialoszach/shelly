@@ -4,8 +4,20 @@
 #include <cstdlib>
 #include "Recorder.hpp"
 #include "WavWriter.hpp"
+#include "OllamaClient.hpp"
 
 int main() {
+    // Testing Ollama Client
+    OllamaClient cli;
+    std::cout << "🐚 Assistant: ";
+    bool ok = cli.chatStream("llama3", "Tell me about RISC-V.",
+                            [&](const std::string& tok) {
+                                std::cout << tok << std::flush;
+                            });
+    std::cout << "\n";
+    return ok ? 0 : 1;
+
+    /*
     try {
         const int sr = 16000; // Sampling rate
         Recorder rec(sr, 1);
@@ -35,4 +47,5 @@ int main() {
         std::cerr << "Error: " << e.what() << "\n";
         return 1;
     }
+    */
 }

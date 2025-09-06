@@ -76,15 +76,15 @@ third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o: third_party/wh
 third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp
 third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o: third_party/whisper.cpp/src/CMakeFiles/whisper.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o -MF CMakeFiles/whisper.dir/whisper.cpp.o.d -o CMakeFiles/whisper.dir/whisper.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o -MF CMakeFiles/whisper.dir/whisper.cpp.o.d -o CMakeFiles/whisper.dir/whisper.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp
 
 third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/whisper.dir/whisper.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp > CMakeFiles/whisper.dir/whisper.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp > CMakeFiles/whisper.dir/whisper.cpp.i
 
 third_party/whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/whisper.dir/whisper.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp -o CMakeFiles/whisper.dir/whisper.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/whisper.cpp -o CMakeFiles/whisper.dir/whisper.cpp.s
 
 # Object files for target whisper
 whisper_OBJECTS = \

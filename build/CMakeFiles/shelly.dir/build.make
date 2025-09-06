@@ -76,71 +76,71 @@ CMakeFiles/shelly.dir/src/main.cpp.o: CMakeFiles/shelly.dir/flags.make
 CMakeFiles/shelly.dir/src/main.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/main.cpp
 CMakeFiles/shelly.dir/src/main.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shelly.dir/src/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/main.cpp.o -MF CMakeFiles/shelly.dir/src/main.cpp.o.d -o CMakeFiles/shelly.dir/src/main.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/main.cpp.o -MF CMakeFiles/shelly.dir/src/main.cpp.o.d -o CMakeFiles/shelly.dir/src/main.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/main.cpp
 
 CMakeFiles/shelly.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/main.cpp > CMakeFiles/shelly.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/main.cpp > CMakeFiles/shelly.dir/src/main.cpp.i
 
 CMakeFiles/shelly.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/main.cpp -o CMakeFiles/shelly.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/main.cpp -o CMakeFiles/shelly.dir/src/main.cpp.s
 
 CMakeFiles/shelly.dir/src/Recorder.cpp.o: CMakeFiles/shelly.dir/flags.make
 CMakeFiles/shelly.dir/src/Recorder.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp
 CMakeFiles/shelly.dir/src/Recorder.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shelly.dir/src/Recorder.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/Recorder.cpp.o -MF CMakeFiles/shelly.dir/src/Recorder.cpp.o.d -o CMakeFiles/shelly.dir/src/Recorder.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/Recorder.cpp.o -MF CMakeFiles/shelly.dir/src/Recorder.cpp.o.d -o CMakeFiles/shelly.dir/src/Recorder.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp
 
 CMakeFiles/shelly.dir/src/Recorder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/Recorder.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp > CMakeFiles/shelly.dir/src/Recorder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp > CMakeFiles/shelly.dir/src/Recorder.cpp.i
 
 CMakeFiles/shelly.dir/src/Recorder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/Recorder.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp -o CMakeFiles/shelly.dir/src/Recorder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp -o CMakeFiles/shelly.dir/src/Recorder.cpp.s
 
 CMakeFiles/shelly.dir/src/WavWriter.cpp.o: CMakeFiles/shelly.dir/flags.make
 CMakeFiles/shelly.dir/src/WavWriter.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp
 CMakeFiles/shelly.dir/src/WavWriter.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shelly.dir/src/WavWriter.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/WavWriter.cpp.o -MF CMakeFiles/shelly.dir/src/WavWriter.cpp.o.d -o CMakeFiles/shelly.dir/src/WavWriter.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/WavWriter.cpp.o -MF CMakeFiles/shelly.dir/src/WavWriter.cpp.o.d -o CMakeFiles/shelly.dir/src/WavWriter.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp
 
 CMakeFiles/shelly.dir/src/WavWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/WavWriter.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp > CMakeFiles/shelly.dir/src/WavWriter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp > CMakeFiles/shelly.dir/src/WavWriter.cpp.i
 
 CMakeFiles/shelly.dir/src/WavWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/WavWriter.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp -o CMakeFiles/shelly.dir/src/WavWriter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp -o CMakeFiles/shelly.dir/src/WavWriter.cpp.s
 
 CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o: CMakeFiles/shelly.dir/flags.make
 CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp
 CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o -MF CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o.d -o CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o -MF CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o.d -o CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp
 
 CMakeFiles/shelly.dir/src/WhisperOffline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/WhisperOffline.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp > CMakeFiles/shelly.dir/src/WhisperOffline.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp > CMakeFiles/shelly.dir/src/WhisperOffline.cpp.i
 
 CMakeFiles/shelly.dir/src/WhisperOffline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/WhisperOffline.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp -o CMakeFiles/shelly.dir/src/WhisperOffline.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp -o CMakeFiles/shelly.dir/src/WhisperOffline.cpp.s
 
 CMakeFiles/shelly.dir/src/OllamaClient.cpp.o: CMakeFiles/shelly.dir/flags.make
 CMakeFiles/shelly.dir/src/OllamaClient.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp
 CMakeFiles/shelly.dir/src/OllamaClient.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/shelly.dir/src/OllamaClient.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/OllamaClient.cpp.o -MF CMakeFiles/shelly.dir/src/OllamaClient.cpp.o.d -o CMakeFiles/shelly.dir/src/OllamaClient.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/OllamaClient.cpp.o -MF CMakeFiles/shelly.dir/src/OllamaClient.cpp.o.d -o CMakeFiles/shelly.dir/src/OllamaClient.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp
 
 CMakeFiles/shelly.dir/src/OllamaClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/OllamaClient.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp > CMakeFiles/shelly.dir/src/OllamaClient.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp > CMakeFiles/shelly.dir/src/OllamaClient.cpp.i
 
 CMakeFiles/shelly.dir/src/OllamaClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/OllamaClient.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp -o CMakeFiles/shelly.dir/src/OllamaClient.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp -o CMakeFiles/shelly.dir/src/OllamaClient.cpp.s
 
 # Object files for target shelly
 shelly_OBJECTS = \

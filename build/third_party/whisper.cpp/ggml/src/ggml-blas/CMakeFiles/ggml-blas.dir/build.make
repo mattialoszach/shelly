@@ -76,15 +76,15 @@ third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cp
 third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp
 third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o: third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src/ggml-blas && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o -MF CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o.d -o CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src/ggml-blas && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o -MF CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o.d -o CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp
 
 third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml-blas.dir/ggml-blas.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src/ggml-blas && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp > CMakeFiles/ggml-blas.dir/ggml-blas.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src/ggml-blas && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp > CMakeFiles/ggml-blas.dir/ggml-blas.cpp.i
 
 third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml-blas.dir/ggml-blas.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src/ggml-blas && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp -o CMakeFiles/ggml-blas.dir/ggml-blas.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src/ggml-blas && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-blas/ggml-blas.cpp -o CMakeFiles/ggml-blas.dir/ggml-blas.cpp.s
 
 # Object files for target ggml-blas
 ggml__blas_OBJECTS = \

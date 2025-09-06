@@ -974,4 +974,5 @@ CMakeFiles/shelly.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
   /Users/mattialoszach/Documents/Code/shelly/include/Recorder.hpp \
   /opt/homebrew/Cellar/portaudio/19.7.0/include/portaudio.h \
-  /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp
+  /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp \
+  /Users/mattialoszach/Documents/Code/shelly/include/OllamaClient.hpp

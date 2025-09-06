@@ -1,0 +1,9 @@
+# build & local artifacts
+/build/
+/models/
+*.bin
+*.gguf
+*.wav
+
+# OS/IDE
+.DS_Store

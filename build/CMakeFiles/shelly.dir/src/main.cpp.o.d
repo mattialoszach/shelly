@@ -975,4 +975,5 @@ CMakeFiles/shelly.dir/src/main.cpp.o: \
   /Users/mattialoszach/Documents/Code/shelly/include/Recorder.hpp \
   /opt/homebrew/Cellar/portaudio/19.7.0/include/portaudio.h \
   /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp \
-  /Users/mattialoszach/Documents/Code/shelly/include/OllamaClient.hpp
+  /Users/mattialoszach/Documents/Code/shelly/include/OllamaClient.hpp \
+  /Users/mattialoszach/Documents/Code/shelly/include/WhisperOffline.hpp

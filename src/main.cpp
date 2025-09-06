@@ -6,8 +6,18 @@
 #include "WavWriter.hpp"
 #include "OllamaClient.hpp"
 #include "WhisperOffline.hpp"
+#include "whisper.h"
+#include "ggml.h"
+
+static void ggml_quiet_logger(enum ggml_log_level level, const char* msg, void*) {
+    if (level >= GGML_LOG_LEVEL_ERROR) {
+        fputs(msg, stderr);
+    }
+}
 
 int main(int argc, char** argv) {
+    ggml_log_set(ggml_quiet_logger, nullptr);
+    whisper_log_set(ggml_quiet_logger, nullptr);
     std::string modelPath_Whisper = "models/ggml-base.en.bin";
     // if (argc > 1) modelPath_Whisper = argv[1];
 
@@ -34,10 +44,10 @@ int main(int argc, char** argv) {
 
         std::cout << "🧠 Transcribing (in-process)...\n";
         std::string userText = whisper.transcribe(rec.data(), "auto");
-        std::cout << "👤 You: " << userText << "\n";
+        std::cout << "\n👤 You: " << userText << "\n";
         if (userText.empty()) continue;
 
-        std::cout << "🐚 Assistant: ";
+        std::cout << "\n🐚 Assistant: ";
         std::string collected; // For Mac System-TTS
         bool ok = ollama.chatStream("llama3", userText, [&](const std::string& token){
             std::cout << token << std::flush;

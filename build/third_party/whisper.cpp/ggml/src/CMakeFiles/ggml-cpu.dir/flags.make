@@ -3,7 +3,7 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DACCELERATE_LAPACK_ILP64 -DACCELERATE_NEW_LAPACK -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_ACCELERATE -DGGML_USE_CPU_REPACK -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS
+C_DEFINES = -DACCELERATE_LAPACK_ILP64 -DACCELERATE_NEW_LAPACK -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_ACCELERATE -DGGML_USE_CPU_REPACK -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS
 
 C_INCLUDES = -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/.. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-cpu -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
@@ -11,7 +11,7 @@ C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu11 -arch arm64 -fPIC -Wshadow -Wstrict-proto
 
 C_FLAGS = -O3 -DNDEBUG -std=gnu11 -arch arm64 -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -mcpu=native+dotprod+noi8mm+nosve+nosme
 
-CXX_DEFINES = -DACCELERATE_LAPACK_ILP64 -DACCELERATE_NEW_LAPACK -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_ACCELERATE -DGGML_USE_CPU_REPACK -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS
+CXX_DEFINES = -DACCELERATE_LAPACK_ILP64 -DACCELERATE_NEW_LAPACK -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_USE_ACCELERATE -DGGML_USE_CPU_REPACK -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_cpu_EXPORTS
 
 CXX_INCLUDES = -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/.. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-cpu -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 

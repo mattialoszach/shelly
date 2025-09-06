@@ -4537,6 +4537,7 @@ CMakeFiles/shelly.dir/src/main.cpp.o: /Users/mattialoszach/Documents/Code/shelly
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
@@ -4706,12 +4707,18 @@ CMakeFiles/shelly.dir/src/main.cpp.o: /Users/mattialoszach/Documents/Code/shelly
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/ptrcheck.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
   /Users/mattialoszach/Documents/Code/shelly/include/OllamaClient.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/Recorder.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/WhisperOffline.hpp \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/include/ggml-alloc.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/include/ggml-backend.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/include/ggml-cpu.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/include/ggml.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/include/whisper.h \
   /opt/homebrew/Cellar/portaudio/19.7.0/include/portaudio.h
 
 

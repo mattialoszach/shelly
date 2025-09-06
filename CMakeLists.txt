@@ -19,7 +19,13 @@ set(WHISPER_BUILD_TESTS    OFF CACHE BOOL "" FORCE)
 # (Optional) enable Metal explicitly (usually auto-detected)
 # set(WHISPER_METAL ON CACHE BOOL "" FORCE)
 
+add_definitions(-DGGML_METAL_NDEBUG)
+
 add_subdirectory(third_party/whisper.cpp EXCLUDE_FROM_ALL) # creates target "whisper"
+
+if(TARGET ggml-metal)
+  target_compile_definitions(ggml-metal PRIVATE GGML_METAL_NDEBUG)
+endif()
 
 # ---- Executable --------------------------------------------------------------
 add_executable(shelly

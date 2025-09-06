@@ -72,7 +72,7 @@ find_library(whisper_LIBRARY whisper
     HINTS ${WHISPER_LIB_DIR})
 
 set(_whisper_link_deps "Threads::Threads" "")
-set(_whisper_transient_defines "")
+set(_whisper_transient_defines "GGML_METAL_NDEBUG")
 
 add_library(whisper UNKNOWN IMPORTED)
 

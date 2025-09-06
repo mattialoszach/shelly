@@ -976,4 +976,11 @@ CMakeFiles/shelly.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/portaudio/19.7.0/include/portaudio.h \
   /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/OllamaClient.hpp \
-  /Users/mattialoszach/Documents/Code/shelly/include/WhisperOffline.hpp
+  /Users/mattialoszach/Documents/Code/shelly/include/WhisperOffline.hpp \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/../include/whisper.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdbool.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdbool.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-cpu.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-backend.h \
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-alloc.h

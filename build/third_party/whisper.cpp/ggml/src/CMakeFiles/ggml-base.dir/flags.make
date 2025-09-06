@@ -3,7 +3,7 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"bb0e1fc6\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.0.3068\" -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
+C_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"bb0e1fc6\" -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.0.3068\" -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
 
 C_INCLUDES = -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include
 
@@ -11,7 +11,7 @@ C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu11 -arch arm64 -fPIC -Wshadow -Wstrict-proto
 
 C_FLAGS = -O3 -DNDEBUG -std=gnu11 -arch arm64 -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion
 
-CXX_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"bb0e1fc6\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.0.3068\" -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
+CXX_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"bb0e1fc6\" -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.0.3068\" -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
 
 CXX_INCLUDES = -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include
 

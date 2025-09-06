@@ -3,7 +3,7 @@
 
 # compile ASM with /usr/bin/cc
 # compile C with /usr/bin/cc
-ASM_DEFINES = -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_METAL_EMBED_LIBRARY -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_metal_EXPORTS
+ASM_DEFINES = -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_METAL_EMBED_LIBRARY -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_metal_EXPORTS
 
 ASM_INCLUDES = -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-metal/.. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/MetalKit.framework
 
@@ -11,7 +11,7 @@ ASM_FLAGSarm64 = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Cont
 
 ASM_FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -fPIC
 
-C_DEFINES = -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_METAL_EMBED_LIBRARY -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_metal_EXPORTS
+C_DEFINES = -DGGML_BACKEND_BUILD -DGGML_BACKEND_SHARED -DGGML_METAL_EMBED_LIBRARY -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_metal_EXPORTS
 
 C_INCLUDES = -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-metal/.. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 

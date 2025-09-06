@@ -1,0 +1,104 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/whisper.cpp/ggml/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 377,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/whisper.cpp/ggml/src/libggml.dylib"
+			],
+			"targetId" : "ggml::@c41768f2b5c913c772b8",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"third_party/whisper.cpp/ggml/include/ggml.h",
+				"third_party/whisper.cpp/ggml/include/ggml-cpu.h",
+				"third_party/whisper.cpp/ggml/include/ggml-alloc.h",
+				"third_party/whisper.cpp/ggml/include/ggml-backend.h",
+				"third_party/whisper.cpp/ggml/include/ggml-blas.h",
+				"third_party/whisper.cpp/ggml/include/ggml-cann.h",
+				"third_party/whisper.cpp/ggml/include/ggml-cpp.h",
+				"third_party/whisper.cpp/ggml/include/ggml-cuda.h",
+				"third_party/whisper.cpp/ggml/include/ggml-opt.h",
+				"third_party/whisper.cpp/ggml/include/ggml-metal.h",
+				"third_party/whisper.cpp/ggml/include/ggml-rpc.h",
+				"third_party/whisper.cpp/ggml/include/ggml-sycl.h",
+				"third_party/whisper.cpp/ggml/include/ggml-vulkan.h",
+				"third_party/whisper.cpp/ggml/include/ggml-webgpu.h",
+				"third_party/whisper.cpp/ggml/include/gguf.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/whisper.cpp/ggml/src/libggml-base.dylib"
+			],
+			"targetId" : "ggml-base::@c41768f2b5c913c772b8",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/ggml",
+			"paths" : 
+			[
+				"build/third_party/whisper.cpp/ggml/ggml-config.cmake",
+				"build/third_party/whisper.cpp/ggml/ggml-version.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/whisper.cpp/ggml",
+		"source" : "third_party/whisper.cpp/ggml"
+	}
+}

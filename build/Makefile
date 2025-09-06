@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles /Users/mattialoszach/Documents/Code/shelly/build//CMakeFiles/progress.marks
@@ -128,6 +173,108 @@ shelly: cmake_check_build_system
 shelly/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/build
 .PHONY : shelly/fast
+
+#=============================================================================
+# Target rules for targets named ggml-base
+
+# Build rule for target.
+ggml-base: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml-base
+.PHONY : ggml-base
+
+# fast build rule for target.
+ggml-base/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/build.make third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/build
+.PHONY : ggml-base/fast
+
+#=============================================================================
+# Target rules for targets named ggml
+
+# Build rule for target.
+ggml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml
+.PHONY : ggml
+
+# fast build rule for target.
+ggml/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/build.make third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/build
+.PHONY : ggml/fast
+
+#=============================================================================
+# Target rules for targets named ggml-cpu
+
+# Build rule for target.
+ggml-cpu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml-cpu
+.PHONY : ggml-cpu
+
+# fast build rule for target.
+ggml-cpu/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/build.make third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/build
+.PHONY : ggml-cpu/fast
+
+#=============================================================================
+# Target rules for targets named ggml-blas
+
+# Build rule for target.
+ggml-blas: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml-blas
+.PHONY : ggml-blas
+
+# fast build rule for target.
+ggml-blas/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/build.make third_party/whisper.cpp/ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/build
+.PHONY : ggml-blas/fast
+
+#=============================================================================
+# Target rules for targets named ggml-metal
+
+# Build rule for target.
+ggml-metal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml-metal
+.PHONY : ggml-metal
+
+# fast build rule for target.
+ggml-metal/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/build.make third_party/whisper.cpp/ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/build
+.PHONY : ggml-metal/fast
+
+#=============================================================================
+# Target rules for targets named whisper
+
+# Build rule for target.
+whisper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 whisper
+.PHONY : whisper
+
+# fast build rule for target.
+whisper/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/src/CMakeFiles/whisper.dir/build.make third_party/whisper.cpp/src/CMakeFiles/whisper.dir/build
+.PHONY : whisper/fast
+
+src/OllamaClient.o: src/OllamaClient.cpp.o
+.PHONY : src/OllamaClient.o
+
+# target to build an object file
+src/OllamaClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/OllamaClient.cpp.o
+.PHONY : src/OllamaClient.cpp.o
+
+src/OllamaClient.i: src/OllamaClient.cpp.i
+.PHONY : src/OllamaClient.i
+
+# target to preprocess a source file
+src/OllamaClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/OllamaClient.cpp.i
+.PHONY : src/OllamaClient.cpp.i
+
+src/OllamaClient.s: src/OllamaClient.cpp.s
+.PHONY : src/OllamaClient.s
+
+# target to generate assembly for a file
+src/OllamaClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/OllamaClient.cpp.s
+.PHONY : src/OllamaClient.cpp.s
 
 src/Recorder.o: src/Recorder.cpp.o
 .PHONY : src/Recorder.o
@@ -177,6 +324,30 @@ src/WavWriter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WavWriter.cpp.s
 .PHONY : src/WavWriter.cpp.s
 
+src/WhisperOffline.o: src/WhisperOffline.cpp.o
+.PHONY : src/WhisperOffline.o
+
+# target to build an object file
+src/WhisperOffline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o
+.PHONY : src/WhisperOffline.cpp.o
+
+src/WhisperOffline.i: src/WhisperOffline.cpp.i
+.PHONY : src/WhisperOffline.i
+
+# target to preprocess a source file
+src/WhisperOffline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WhisperOffline.cpp.i
+.PHONY : src/WhisperOffline.cpp.i
+
+src/WhisperOffline.s: src/WhisperOffline.cpp.s
+.PHONY : src/WhisperOffline.s
+
+# target to generate assembly for a file
+src/WhisperOffline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/WhisperOffline.cpp.s
+.PHONY : src/WhisperOffline.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -208,14 +379,30 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... ggml"
+	@echo "... ggml-base"
+	@echo "... ggml-blas"
+	@echo "... ggml-cpu"
+	@echo "... ggml-metal"
 	@echo "... shelly"
+	@echo "... whisper"
+	@echo "... src/OllamaClient.o"
+	@echo "... src/OllamaClient.i"
+	@echo "... src/OllamaClient.s"
 	@echo "... src/Recorder.o"
 	@echo "... src/Recorder.i"
 	@echo "... src/Recorder.s"
 	@echo "... src/WavWriter.o"
 	@echo "... src/WavWriter.i"
 	@echo "... src/WavWriter.s"
+	@echo "... src/WhisperOffline.o"
+	@echo "... src/WhisperOffline.i"
+	@echo "... src/WhisperOffline.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

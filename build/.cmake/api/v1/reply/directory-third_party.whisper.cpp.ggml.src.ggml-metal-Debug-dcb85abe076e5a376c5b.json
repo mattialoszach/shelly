@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ggml_add_backend_library"
+		],
+		"files" : 
+		[
+			"third_party/whisper.cpp/ggml/src/CMakeLists.txt",
+			"third_party/whisper.cpp/ggml/src/ggml-metal/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/whisper.cpp/ggml/src/ggml-metal/libggml-metal.dylib"
+			],
+			"targetId" : "ggml-metal::@a0f4d3f877536d249b38",
+			"targetIndex" : 4,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/whisper.cpp/ggml/src/ggml-metal",
+		"source" : "third_party/whisper.cpp/ggml/src/ggml-metal"
+	}
+}

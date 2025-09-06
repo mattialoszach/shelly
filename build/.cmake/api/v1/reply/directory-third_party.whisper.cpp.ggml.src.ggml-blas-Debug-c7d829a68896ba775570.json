@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ggml_add_backend_library"
+		],
+		"files" : 
+		[
+			"third_party/whisper.cpp/ggml/src/CMakeLists.txt",
+			"third_party/whisper.cpp/ggml/src/ggml-blas/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/whisper.cpp/ggml/src/ggml-blas/libggml-blas.dylib"
+			],
+			"targetId" : "ggml-blas::@9d011dc9f29ece9a4991",
+			"targetIndex" : 2,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/whisper.cpp/ggml/src/ggml-blas",
+		"source" : "third_party/whisper.cpp/ggml/src/ggml-blas"
+	}
+}

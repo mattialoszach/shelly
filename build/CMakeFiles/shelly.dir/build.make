@@ -142,13 +142,43 @@ CMakeFiles/shelly.dir/src/OllamaClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/OllamaClient.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp -o CMakeFiles/shelly.dir/src/OllamaClient.cpp.s
 
+CMakeFiles/shelly.dir/src/TTS.cpp.o: CMakeFiles/shelly.dir/flags.make
+CMakeFiles/shelly.dir/src/TTS.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp
+CMakeFiles/shelly.dir/src/TTS.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/shelly.dir/src/TTS.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/TTS.cpp.o -MF CMakeFiles/shelly.dir/src/TTS.cpp.o.d -o CMakeFiles/shelly.dir/src/TTS.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp
+
+CMakeFiles/shelly.dir/src/TTS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/TTS.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp > CMakeFiles/shelly.dir/src/TTS.cpp.i
+
+CMakeFiles/shelly.dir/src/TTS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/TTS.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp -o CMakeFiles/shelly.dir/src/TTS.cpp.s
+
+CMakeFiles/shelly.dir/src/TextPrep.cpp.o: CMakeFiles/shelly.dir/flags.make
+CMakeFiles/shelly.dir/src/TextPrep.cpp.o: /Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp
+CMakeFiles/shelly.dir/src/TextPrep.cpp.o: CMakeFiles/shelly.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/shelly.dir/src/TextPrep.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shelly.dir/src/TextPrep.cpp.o -MF CMakeFiles/shelly.dir/src/TextPrep.cpp.o.d -o CMakeFiles/shelly.dir/src/TextPrep.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp
+
+CMakeFiles/shelly.dir/src/TextPrep.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shelly.dir/src/TextPrep.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp > CMakeFiles/shelly.dir/src/TextPrep.cpp.i
+
+CMakeFiles/shelly.dir/src/TextPrep.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shelly.dir/src/TextPrep.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp -o CMakeFiles/shelly.dir/src/TextPrep.cpp.s
+
 # Object files for target shelly
 shelly_OBJECTS = \
 "CMakeFiles/shelly.dir/src/main.cpp.o" \
 "CMakeFiles/shelly.dir/src/Recorder.cpp.o" \
 "CMakeFiles/shelly.dir/src/WavWriter.cpp.o" \
 "CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o" \
-"CMakeFiles/shelly.dir/src/OllamaClient.cpp.o"
+"CMakeFiles/shelly.dir/src/OllamaClient.cpp.o" \
+"CMakeFiles/shelly.dir/src/TTS.cpp.o" \
+"CMakeFiles/shelly.dir/src/TextPrep.cpp.o"
 
 # External object files for target shelly
 shelly_EXTERNAL_OBJECTS =
@@ -158,6 +188,8 @@ shelly: CMakeFiles/shelly.dir/src/Recorder.cpp.o
 shelly: CMakeFiles/shelly.dir/src/WavWriter.cpp.o
 shelly: CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o
 shelly: CMakeFiles/shelly.dir/src/OllamaClient.cpp.o
+shelly: CMakeFiles/shelly.dir/src/TTS.cpp.o
+shelly: CMakeFiles/shelly.dir/src/TextPrep.cpp.o
 shelly: CMakeFiles/shelly.dir/build.make
 shelly: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 shelly: third_party/whisper.cpp/src/libwhisper.1.7.6.dylib
@@ -170,7 +202,7 @@ shelly: third_party/whisper.cpp/ggml/src/ggml-blas/libggml-blas.dylib
 shelly: third_party/whisper.cpp/ggml/src/ggml-metal/libggml-metal.dylib
 shelly: third_party/whisper.cpp/ggml/src/libggml-base.dylib
 shelly: CMakeFiles/shelly.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable shelly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable shelly"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shelly.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

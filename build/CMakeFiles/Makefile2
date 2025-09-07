@@ -245,12 +245,12 @@ CMakeFiles/shelly.dir/all: third_party/whisper.cpp/ggml/src/ggml-metal/CMakeFile
 CMakeFiles/shelly.dir/all: third_party/whisper.cpp/src/CMakeFiles/whisper.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=33,34,35,36,37,38 "Built target shelly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=33,34,35,36,37,38,39,40 "Built target shelly"
 .PHONY : CMakeFiles/shelly.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shelly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shelly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles 0
 .PHONY : CMakeFiles/shelly.dir/rule
@@ -262,7 +262,7 @@ shelly: CMakeFiles/shelly.dir/rule
 # codegen rule for target.
 CMakeFiles/shelly.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=33,34,35,36,37,38 "Finished codegen for target shelly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=33,34,35,36,37,38,39,40 "Finished codegen for target shelly"
 .PHONY : CMakeFiles/shelly.dir/codegen
 
 # clean rule for target.
@@ -444,7 +444,7 @@ third_party/whisper.cpp/src/CMakeFiles/whisper.dir/all: third_party/whisper.cpp/
 third_party/whisper.cpp/src/CMakeFiles/whisper.dir/all: third_party/whisper.cpp/ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/src/CMakeFiles/whisper.dir/build.make third_party/whisper.cpp/src/CMakeFiles/whisper.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/src/CMakeFiles/whisper.dir/build.make third_party/whisper.cpp/src/CMakeFiles/whisper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=39,40 "Built target whisper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=41,42 "Built target whisper"
 .PHONY : third_party/whisper.cpp/src/CMakeFiles/whisper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -461,7 +461,7 @@ whisper: third_party/whisper.cpp/src/CMakeFiles/whisper.dir/rule
 # codegen rule for target.
 third_party/whisper.cpp/src/CMakeFiles/whisper.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party/whisper.cpp/src/CMakeFiles/whisper.dir/build.make third_party/whisper.cpp/src/CMakeFiles/whisper.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=39,40 "Finished codegen for target whisper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=41,42 "Finished codegen for target whisper"
 .PHONY : third_party/whisper.cpp/src/CMakeFiles/whisper.dir/codegen
 
 # clean rule for target.

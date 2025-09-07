@@ -30,6 +30,18 @@
   "output": "CMakeFiles/shelly.dir/src/OllamaClient.cpp.o"
 },
 {
+  "directory": "/Users/mattialoszach/Documents/Code/shelly/build",
+  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_METAL_NDEBUG -DGGML_SHARED -DGGML_USE_BLAS -DGGML_USE_CPU -DGGML_USE_METAL -I/Users/mattialoszach/Documents/Code/shelly/include -I/Users/mattialoszach/Documents/Code/shelly/third_party -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/../include -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -isystem /opt/homebrew/Cellar/portaudio/19.7.0/include -isystem /opt/homebrew/Cellar/libsndfile/1.2.2_1/include -isystem /opt/homebrew/Cellar/flac/1.5.0/include -isystem /opt/homebrew/Cellar/libvorbis/1.3.7/include -isystem /opt/homebrew/Cellar/libogg/1.3.6/include -isystem /opt/homebrew/Cellar/opus/1.5.2/include/opus -isystem /opt/homebrew/Cellar/mpg123/1.33.2/include -O3 -DNDEBUG -std=gnu++20 -arch arm64 -o CMakeFiles/shelly.dir/src/TTS.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp",
+  "file": "/Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp",
+  "output": "CMakeFiles/shelly.dir/src/TTS.cpp.o"
+},
+{
+  "directory": "/Users/mattialoszach/Documents/Code/shelly/build",
+  "command": "/usr/bin/c++ -DGGML_BACKEND_SHARED -DGGML_METAL_NDEBUG -DGGML_SHARED -DGGML_USE_BLAS -DGGML_USE_CPU -DGGML_USE_METAL -I/Users/mattialoszach/Documents/Code/shelly/include -I/Users/mattialoszach/Documents/Code/shelly/third_party -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/src/../include -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -isystem /opt/homebrew/Cellar/portaudio/19.7.0/include -isystem /opt/homebrew/Cellar/libsndfile/1.2.2_1/include -isystem /opt/homebrew/Cellar/flac/1.5.0/include -isystem /opt/homebrew/Cellar/libvorbis/1.3.7/include -isystem /opt/homebrew/Cellar/libogg/1.3.6/include -isystem /opt/homebrew/Cellar/opus/1.5.2/include/opus -isystem /opt/homebrew/Cellar/mpg123/1.33.2/include -O3 -DNDEBUG -std=gnu++20 -arch arm64 -o CMakeFiles/shelly.dir/src/TextPrep.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp",
+  "file": "/Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp",
+  "output": "CMakeFiles/shelly.dir/src/TextPrep.cpp.o"
+},
+{
   "directory": "/Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src",
   "command": "/usr/bin/cc -DGGML_BUILD -DGGML_COMMIT=\\\"bb0e1fc6\\\" -DGGML_METAL_NDEBUG -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\\\"0.0.3068\\\" -D_DARWIN_C_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/. -I/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include -O3 -DNDEBUG -std=gnu11 -arch arm64 -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -o CMakeFiles/ggml-base.dir/ggml.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c",
   "file": "/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c",

@@ -300,6 +300,54 @@ src/Recorder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/Recorder.cpp.s
 .PHONY : src/Recorder.cpp.s
 
+src/TTS.o: src/TTS.cpp.o
+.PHONY : src/TTS.o
+
+# target to build an object file
+src/TTS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/TTS.cpp.o
+.PHONY : src/TTS.cpp.o
+
+src/TTS.i: src/TTS.cpp.i
+.PHONY : src/TTS.i
+
+# target to preprocess a source file
+src/TTS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/TTS.cpp.i
+.PHONY : src/TTS.cpp.i
+
+src/TTS.s: src/TTS.cpp.s
+.PHONY : src/TTS.s
+
+# target to generate assembly for a file
+src/TTS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/TTS.cpp.s
+.PHONY : src/TTS.cpp.s
+
+src/TextPrep.o: src/TextPrep.cpp.o
+.PHONY : src/TextPrep.o
+
+# target to build an object file
+src/TextPrep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/TextPrep.cpp.o
+.PHONY : src/TextPrep.cpp.o
+
+src/TextPrep.i: src/TextPrep.cpp.i
+.PHONY : src/TextPrep.i
+
+# target to preprocess a source file
+src/TextPrep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/TextPrep.cpp.i
+.PHONY : src/TextPrep.cpp.i
+
+src/TextPrep.s: src/TextPrep.cpp.s
+.PHONY : src/TextPrep.s
+
+# target to generate assembly for a file
+src/TextPrep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shelly.dir/build.make CMakeFiles/shelly.dir/src/TextPrep.cpp.s
+.PHONY : src/TextPrep.cpp.s
+
 src/WavWriter.o: src/WavWriter.cpp.o
 .PHONY : src/WavWriter.o
 
@@ -397,6 +445,12 @@ help:
 	@echo "... src/Recorder.o"
 	@echo "... src/Recorder.i"
 	@echo "... src/Recorder.s"
+	@echo "... src/TTS.o"
+	@echo "... src/TTS.i"
+	@echo "... src/TTS.s"
+	@echo "... src/TextPrep.o"
+	@echo "... src/TextPrep.i"
+	@echo "... src/TextPrep.s"
 	@echo "... src/WavWriter.o"
 	@echo "... src/WavWriter.i"
 	@echo "... src/WavWriter.s"

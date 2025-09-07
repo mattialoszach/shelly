@@ -983,4 +983,8 @@ CMakeFiles/shelly.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdbool.h \
   /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-cpu.h \
   /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-backend.h \
-  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-alloc.h
+  /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/ggml-alloc.h \
+  /Users/mattialoszach/Documents/Code/shelly/include/TTS.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
+  /Users/mattialoszach/Documents/Code/shelly/include/TextPrep.hpp

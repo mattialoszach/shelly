@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mattialoszach/Documents/Code/shelly/src/OllamaClient.cpp" "CMakeFiles/shelly.dir/src/OllamaClient.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/OllamaClient.cpp.o.d"
   "/Users/mattialoszach/Documents/Code/shelly/src/Recorder.cpp" "CMakeFiles/shelly.dir/src/Recorder.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/Recorder.cpp.o.d"
+  "/Users/mattialoszach/Documents/Code/shelly/src/TTS.cpp" "CMakeFiles/shelly.dir/src/TTS.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/TTS.cpp.o.d"
+  "/Users/mattialoszach/Documents/Code/shelly/src/TextPrep.cpp" "CMakeFiles/shelly.dir/src/TextPrep.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/TextPrep.cpp.o.d"
   "/Users/mattialoszach/Documents/Code/shelly/src/WavWriter.cpp" "CMakeFiles/shelly.dir/src/WavWriter.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/WavWriter.cpp.o.d"
   "/Users/mattialoszach/Documents/Code/shelly/src/WhisperOffline.cpp" "CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/WhisperOffline.cpp.o.d"
   "/Users/mattialoszach/Documents/Code/shelly/src/main.cpp" "CMakeFiles/shelly.dir/src/main.cpp.o" "gcc" "CMakeFiles/shelly.dir/src/main.cpp.o.d"

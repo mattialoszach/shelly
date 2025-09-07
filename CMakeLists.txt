@@ -34,6 +34,8 @@ add_executable(shelly
   src/WavWriter.cpp
   src/WhisperOffline.cpp
   src/OllamaClient.cpp         # if you're using Ollama; otherwise remove
+  src/TTS.cpp
+  src/TextPrep.cpp
 )
 
 # ---- Includes ----------------------------------------------------------------
@@ -53,7 +55,8 @@ target_link_libraries(shelly
 
 # macOS frameworks / acceleration
 if(APPLE)
-  target_link_libraries(shelly "-framework Accelerate")
   target_link_libraries(shelly
-    "-framework CoreAudio" "-framework AudioToolbox" "-framework AudioUnit" "-framework CoreServices")
+    "-framework Accelerate"
+    "-framework CoreAudio" "-framework AudioToolbox" "-framework AudioUnit" "-framework CoreServices"
+  )
 endif()

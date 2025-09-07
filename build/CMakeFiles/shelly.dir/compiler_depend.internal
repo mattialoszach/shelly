@@ -6576,6 +6576,7 @@ CMakeFiles/shelly.dir/src/main.cpp.o
  /Users/mattialoszach/Documents/Code/shelly/include/Recorder.hpp
  /Users/mattialoszach/Documents/Code/shelly/include/SystemPrompt.hpp
  /Users/mattialoszach/Documents/Code/shelly/include/TTS.hpp
+ /Users/mattialoszach/Documents/Code/shelly/include/TerminalUI.hpp
  /Users/mattialoszach/Documents/Code/shelly/include/TextPrep.hpp
  /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp
  /Users/mattialoszach/Documents/Code/shelly/include/WhisperOffline.hpp

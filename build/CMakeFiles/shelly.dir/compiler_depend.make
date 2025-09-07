@@ -6569,6 +6569,7 @@ CMakeFiles/shelly.dir/src/main.cpp.o: /Users/mattialoszach/Documents/Code/shelly
   /Users/mattialoszach/Documents/Code/shelly/include/Recorder.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/SystemPrompt.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/TTS.hpp \
+  /Users/mattialoszach/Documents/Code/shelly/include/TerminalUI.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/TextPrep.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/WavWriter.hpp \
   /Users/mattialoszach/Documents/Code/shelly/include/WhisperOffline.hpp \
@@ -8807,6 +8808,8 @@ CMakeFiles/shelly.dir/src/main.cpp.o: /Users/mattialoszach/Documents/Code/shelly
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h:
+
+/Users/mattialoszach/Documents/Code/shelly/include/TerminalUI.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
 

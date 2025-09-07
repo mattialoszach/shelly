@@ -11,6 +11,7 @@
 #include "TTS.hpp"
 #include "TextPrep.hpp"
 #include "SystemPrompt.hpp"
+#include "TerminalUI.hpp"
 
 static void ggml_quiet_logger(enum ggml_log_level level, const char* msg, void*) {
     if (level >= GGML_LOG_LEVEL_ERROR) {
@@ -22,9 +23,7 @@ int main(int argc, char** argv) {
     ggml_log_set(ggml_quiet_logger, nullptr);
     whisper_log_set(ggml_quiet_logger, nullptr);
     std::string modelPath_Whisper = "models/ggml-base.en.bin";
-
-    std::cout << "🗣️ Hold ENTER → Speak → release ENTER. Type 'q' + ENTER to quit.\n";
-
+    
     const int sr = 16000; // Sampling rate
     Recorder rec(sr, 1);
     WhisperOffline whisper(modelPath_Whisper);
@@ -34,52 +33,81 @@ int main(int argc, char** argv) {
     TTS tts;
     tts.start();
 
+    tui::CursorGuard cg;
+
+    tui::header();
+    tui::button_idle();
+
     while (true) {
-        std::cout << "\nReady. Press ENTER to start recording...\n";
+        // Input line
         std::string line;
-        if (!std::getline(std::cin, line)) break; // Waits for ENTER
+        if (!std::getline(std::cin, line)) break;
         if (line == "q") {
+            tui::header();
+            tui::bye();
             break;
         }
 
-        std::cout << "🎙️  Recording... (press ENTER to stop)";
+        // Recording UI
+        tui::header();
+        tui::button_recording();
+        std::cout << tui::ansi::fg_gray << " ↪ capturing mic…" << tui::ansi::reset << "\n";
+
         rec.clear();
         rec.start();
+        // wait for second ENTER
         std::getline(std::cin, line);
         rec.stop();
-        std::cout << "\n⏹️  Stopped. Frames: " << rec.data().size() << "\n";
-        if (rec.data().empty()) continue;
 
-        std::cout << "🧠 Transcribing (in-process)...\n";
-        std::string userText = whisper.transcribe(rec.data(), "auto"); // Actual User Input
-        sysprompt::SystemPrompt sysprompt("Shelly");
-        std::string prompt = sysprompt.build(userText); // Transformed Prompt with System Prompt
+        // Show frames count and transition to ASR
+        tui::header();
+        tui::button_recording(" ⏹ STOPPED ");
+        std::cout << tui::ansi::fg_gray << "(frames: " << rec.data().size() << tui::ansi::reset << ")\n";
+        if (rec.data().empty()) {
+            continue;
+        }
 
-        std::cout << "\n👤 You: " << userText << "\n";
-        if (userText.empty()) continue;
+        // Transcribe with a small spinner
+        tui::Spinner sp("transcribing");
+        sp.start();
+        std::string userText = whisper.transcribe(rec.data(), "auto");
+        sp.stop();
 
-        std::cout << "\n🐚 Assistant: ";
+        tui::header();
+        tui::button_idle(" READY "); // back to idle look while we think
+        tui::block_user(userText.empty() ? "(no speech detected)" : userText);
+        if (userText.empty()) {
+            continue;
+        }
+
+        // Build prompt with system context
+        sysprompt::SystemPrompt sysp("Shelly");
+        std::string prompt = sysp.build(userText);
+
+        // Stream assistant
+        tui::block_assistant_prefix();
         std::string collected;
         SentenceBuffer sbuf;
         bool ok = ollama.chatStream("llama3", prompt, [&](const std::string& token){
             std::cout << token << std::flush;
             collected += token;
-
-            // As tokens arrive, emit complete sentences for TTS
             for (auto& s : sbuf.append(token)) {
                 auto clean = clean_for_tts(s);
                 tts.enqueue(clean);
             }
         });
-        // Flush any remainder at end of stream
+
+        // Flush remainder to TTS
         {
             auto rem = sbuf.flush();
             if (!rem.empty()) tts.enqueue(clean_for_tts(rem));
         }
         std::cout << "\n";
+
+        // Ready again at the top
+        tui::button_idle();
     }
 
-    std::cout << "Bye!\n";
     tts.stop();
     return 0;
 }

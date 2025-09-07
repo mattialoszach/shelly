@@ -10,6 +10,7 @@
 #include "ggml.h"
 #include "TTS.hpp"
 #include "TextPrep.hpp"
+#include "SystemPrompt.hpp"
 
 static void ggml_quiet_logger(enum ggml_log_level level, const char* msg, void*) {
     if (level >= GGML_LOG_LEVEL_ERROR) {
@@ -34,10 +35,12 @@ int main(int argc, char** argv) {
     tts.start();
 
     while (true) {
-        std::cout << "\nReady. Press ENTER to start recording...";
+        std::cout << "\nReady. Press ENTER to start recording...\n";
         std::string line;
         if (!std::getline(std::cin, line)) break; // Waits for ENTER
-        if (line == "q") break;
+        if (line == "q") {
+            break;
+        }
 
         std::cout << "🎙️  Recording... (press ENTER to stop)";
         rec.clear();
@@ -48,14 +51,17 @@ int main(int argc, char** argv) {
         if (rec.data().empty()) continue;
 
         std::cout << "🧠 Transcribing (in-process)...\n";
-        std::string userText = whisper.transcribe(rec.data(), "auto");
+        std::string userText = whisper.transcribe(rec.data(), "auto"); // Actual User Input
+        sysprompt::SystemPrompt sysprompt("Shelly");
+        std::string prompt = sysprompt.build(userText); // Transformed Prompt with System Prompt
+
         std::cout << "\n👤 You: " << userText << "\n";
         if (userText.empty()) continue;
 
         std::cout << "\n🐚 Assistant: ";
         std::string collected;
         SentenceBuffer sbuf;
-        bool ok = ollama.chatStream("llama3", userText, [&](const std::string& token){
+        bool ok = ollama.chatStream("llama3", prompt, [&](const std::string& token){
             std::cout << token << std::flush;
             collected += token;
 

@@ -71,7 +71,7 @@ private:
 // “Button-like” labels
 inline void button_idle(const std::string& text = " PRESS ENTER TO START ") {
     std::cout << "\n" << ansi::bg_blue << ansi::bold << text << ansi::reset
-              << "  " << ansi::fg_gray << "(type 'q' + ENTER to quit)" << ansi::reset << "\n";
+              << "  " << ansi::fg_gray << "(type 'q' or 'ESC' to quit)" << ansi::reset << "\n";
 }
 inline void button_recording(const std::string& text = " ● RECORDING — PRESS ENTER TO STOP ") {
     std::cout << "\n" << ansi::bg_red << ansi::bold << text << ansi::reset << "\n";

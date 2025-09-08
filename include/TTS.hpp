@@ -4,6 +4,8 @@
 #include <thread>
 #include <mutex>
 #include <condition_variable>
+#include <atomic>
+#include <sys/types.h>
 
 // Simple TTS queue using macOS `say` (default) or `espeak` if available.
 class TTS {
@@ -29,5 +31,5 @@ private:
     std::condition_variable cv_;
     bool stopping_ = false;
     std::thread th_;
+    std::atomic<pid_t> child_pid_{0};
 };
-

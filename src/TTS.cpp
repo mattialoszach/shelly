@@ -2,6 +2,7 @@
 #include <vector>
 #include <spawn.h>
 #include <sys/wait.h>
+#include <signal.h>
 
 extern char **environ;
 
@@ -18,12 +19,22 @@ void TTS::start() {
 }
 
 void TTS::stop() {
+    pid_t pid_to_kill = 0;
     {
         std::lock_guard<std::mutex> lk(m_);
         if (!th_.joinable()) return;
         stopping_ = true;
+        // Drop any queued items to stop immediately
+        while (!q_.empty()) q_.pop();
+        pid_to_kill = child_pid_.load();
     }
+    // Wake worker
     cv_.notify_all();
+    // Interrupt current TTS process if running
+    if (pid_to_kill > 0) {
+        // Be decisive to ensure immediate stop
+        (void)kill(pid_to_kill, SIGKILL);
+    }
     th_.join();
 }
 
@@ -69,8 +80,10 @@ void TTS::speak(const std::string& text) {
         pid_t pid = 0;
         int rc = posix_spawnp(&pid, argv[0], nullptr, nullptr, argv.data(), environ);
         if (rc != 0) return rc;
+        child_pid_.store(pid);
         int status = 0;
         (void)waitpid(pid, &status, 0);
+        child_pid_.store(0);
         return 0;
     };
 
@@ -95,4 +108,3 @@ void TTS::speak(const std::string& text) {
         (void)spawn_and_wait(args);
     }
 }
-

@@ -20,6 +20,19 @@ static void ggml_quiet_logger(enum ggml_log_level level, const char* msg, void*)
 }
 
 int main(int argc, char** argv) {
+    bool mute = false;
+
+    for (int i = 1; i < argc; i++) {
+        std::string arg = argv[i];
+
+        if (arg == "-mute" || arg == "-m") {
+            mute = true;
+        } else if (arg == "-help" || arg == "-h") {
+            std::cout << "Usage: " << argv[0] << " [-mute] [-help]\n";
+            return 0;
+        }
+    }
+
     ggml_log_set(ggml_quiet_logger, nullptr);
     whisper_log_set(ggml_quiet_logger, nullptr);
     std::string modelPath_Whisper = "models/ggml-base.en.bin";
@@ -31,7 +44,7 @@ int main(int argc, char** argv) {
 
     // TTS configuration
     TTS tts;
-    tts.start();
+    if (!mute) tts.start();
 
     tui::CursorGuard cg;
 
@@ -93,7 +106,7 @@ int main(int argc, char** argv) {
             collected += token;
             for (auto& s : sbuf.append(token)) {
                 auto clean = clean_for_tts(s);
-                tts.enqueue(clean);
+                if (!mute) tts.enqueue(clean);
             }
         });
 
@@ -108,6 +121,6 @@ int main(int argc, char** argv) {
         tui::button_idle();
     }
 
-    tts.stop();
+    if (!mute) tts.stop();
     return 0;
 }

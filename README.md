@@ -1,7 +1,11 @@
 # 🐚 Shelly
 ## A tiny terminal voice assistant
-
 Shelly is my simple, local “shell Siri.” Press Enter to record, speak, get a streamed reply, and hear it read back. I made it to get back into C++ and to test how easy it is to wire up an AI workflow (Whisper → Ollama LLM → a bit of RAG) in a clean terminal app using C++.
+
+<img src="img/shelly-banner.png" alt="Screenshot" width="550">
+<img src="img/img1.png" alt="Screenshot" width="600">
+<img src="img/img2.png" alt="Screenshot" width="600">
+<img src="img/img3.png" alt="Screenshot" width="600">
 
 ## 🚀 Quick Overview
 - Mic recording via PortAudio at 16 kHz

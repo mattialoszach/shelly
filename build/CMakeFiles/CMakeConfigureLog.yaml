@@ -5836,3 +5836,81 @@ events:
         
       exitCode: 2
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:251 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "third_party/whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "third_party/whisper.cpp/ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-LXhjup"
+      binary: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-LXhjup"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/cmake/"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-LXhjup'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d93ce/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d93ce.dir/build.make CMakeFiles/cmTC_d93ce.dir/build
+        Building C object CMakeFiles/cmTC_d93ce.dir/OpenMPTryFlag.c.o
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -MD -MT CMakeFiles/cmTC_d93ce.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_d93ce.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_d93ce.dir/OpenMPTryFlag.c.o -c /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-LXhjup/OpenMPTryFlag.c
+        /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-LXhjup/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_d93ce.dir/OpenMPTryFlag.c.o] Error 1
+        make: *** [cmTC_d93ce/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:251 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "third_party/whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "third_party/whisper.cpp/ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-2A0NPx"
+      binary: "/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-2A0NPx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/cmake/"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-2A0NPx'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_13473/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_13473.dir/build.make CMakeFiles/cmTC_13473.dir/build
+        Building CXX object CMakeFiles/cmTC_13473.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -MD -MT CMakeFiles/cmTC_13473.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_13473.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_13473.dir/OpenMPTryFlag.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-2A0NPx/OpenMPTryFlag.cpp
+        /Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles/CMakeScratch/TryCompile-2A0NPx/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_13473.dir/OpenMPTryFlag.cpp.o] Error 1
+        make: *** [cmTC_13473/fast] Error 2
+        
+      exitCode: 2
+...

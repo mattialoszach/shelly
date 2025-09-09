@@ -76,113 +76,113 @@ third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o: third_party/
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o -MF CMakeFiles/ggml-base.dir/ggml.c.o.d -o CMakeFiles/ggml-base.dir/ggml.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o -MF CMakeFiles/ggml-base.dir/ggml.c.o.d -o CMakeFiles/ggml-base.dir/ggml.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ggml-base.dir/ggml.c.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c > CMakeFiles/ggml-base.dir/ggml.c.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c > CMakeFiles/ggml-base.dir/ggml.c.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ggml-base.dir/ggml.c.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c -o CMakeFiles/ggml-base.dir/ggml.c.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.c -o CMakeFiles/ggml-base.dir/ggml.c.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o -MF CMakeFiles/ggml-base.dir/ggml.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o -MF CMakeFiles/ggml-base.dir/ggml.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml-base.dir/ggml.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp > CMakeFiles/ggml-base.dir/ggml.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp > CMakeFiles/ggml-base.dir/ggml.cpp.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml-base.dir/ggml.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp -o CMakeFiles/ggml-base.dir/ggml.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml.cpp -o CMakeFiles/ggml-base.dir/ggml.cpp.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o -MF CMakeFiles/ggml-base.dir/ggml-alloc.c.o.d -o CMakeFiles/ggml-base.dir/ggml-alloc.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o -MF CMakeFiles/ggml-base.dir/ggml-alloc.c.o.d -o CMakeFiles/ggml-base.dir/ggml-alloc.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ggml-base.dir/ggml-alloc.c.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c > CMakeFiles/ggml-base.dir/ggml-alloc.c.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c > CMakeFiles/ggml-base.dir/ggml-alloc.c.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ggml-base.dir/ggml-alloc.c.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c -o CMakeFiles/ggml-base.dir/ggml-alloc.c.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-alloc.c -o CMakeFiles/ggml-base.dir/ggml-alloc.c.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-backend.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-backend.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml-base.dir/ggml-backend.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp > CMakeFiles/ggml-base.dir/ggml-backend.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp > CMakeFiles/ggml-base.dir/ggml-backend.cpp.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml-base.dir/ggml-backend.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp -o CMakeFiles/ggml-base.dir/ggml-backend.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend.cpp -o CMakeFiles/ggml-base.dir/ggml-backend.cpp.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-opt.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-opt.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml-base.dir/ggml-opt.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp > CMakeFiles/ggml-base.dir/ggml-opt.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp > CMakeFiles/ggml-base.dir/ggml-opt.cpp.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml-base.dir/ggml-opt.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp -o CMakeFiles/ggml-base.dir/ggml-opt.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-opt.cpp -o CMakeFiles/ggml-base.dir/ggml-opt.cpp.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-threading.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -MF CMakeFiles/ggml-base.dir/ggml-threading.cpp.o.d -o CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml-base.dir/ggml-threading.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp > CMakeFiles/ggml-base.dir/ggml-threading.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp > CMakeFiles/ggml-base.dir/ggml-threading.cpp.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml-base.dir/ggml-threading.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp -o CMakeFiles/ggml-base.dir/ggml-threading.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-threading.cpp -o CMakeFiles/ggml-base.dir/ggml-threading.cpp.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o -MF CMakeFiles/ggml-base.dir/ggml-quants.c.o.d -o CMakeFiles/ggml-base.dir/ggml-quants.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o -MF CMakeFiles/ggml-base.dir/ggml-quants.c.o.d -o CMakeFiles/ggml-base.dir/ggml-quants.c.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ggml-base.dir/ggml-quants.c.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c > CMakeFiles/ggml-base.dir/ggml-quants.c.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c > CMakeFiles/ggml-base.dir/ggml-quants.c.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ggml-base.dir/ggml-quants.c.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c -o CMakeFiles/ggml-base.dir/ggml-quants.c.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-quants.c -o CMakeFiles/ggml-base.dir/ggml-quants.c.s
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/flags.make
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o -MF CMakeFiles/ggml-base.dir/gguf.cpp.o.d -o CMakeFiles/ggml-base.dir/gguf.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o -MF CMakeFiles/ggml-base.dir/gguf.cpp.o.d -o CMakeFiles/ggml-base.dir/gguf.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml-base.dir/gguf.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp > CMakeFiles/ggml-base.dir/gguf.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp > CMakeFiles/ggml-base.dir/gguf.cpp.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml-base.dir/gguf.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp -o CMakeFiles/ggml-base.dir/gguf.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/gguf.cpp -o CMakeFiles/ggml-base.dir/gguf.cpp.s
 
 # Object files for target ggml-base
 ggml__base_OBJECTS = \

@@ -64,6 +64,7 @@ third_party/whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quant
   /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/./ggml-impl.h \
   /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/../include/gguf.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdlib.h \

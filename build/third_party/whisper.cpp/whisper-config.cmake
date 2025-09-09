@@ -72,7 +72,7 @@ find_library(whisper_LIBRARY whisper
     HINTS ${WHISPER_LIB_DIR})
 
 set(_whisper_link_deps "Threads::Threads" "")
-set(_whisper_transient_defines "GGML_METAL_NDEBUG")
+set(_whisper_transient_defines "DEFAULT_SHELLY_SHARE_DIR="/usr/local/share/shelly";GGML_METAL_NDEBUG")
 
 add_library(whisper UNKNOWN IMPORTED)
 

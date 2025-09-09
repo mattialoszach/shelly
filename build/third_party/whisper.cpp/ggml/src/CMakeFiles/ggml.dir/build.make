@@ -76,15 +76,15 @@ third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o: thi
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o: /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o: third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mattialoszach/Documents/Code/shelly/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o -MF CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o.d -o CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o -MF CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o.d -o CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o -c /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ggml.dir/ggml-backend-reg.cpp.i"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp > CMakeFiles/ggml.dir/ggml-backend-reg.cpp.i
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp > CMakeFiles/ggml.dir/ggml-backend-reg.cpp.i
 
 third_party/whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ggml.dir/ggml-backend-reg.cpp.s"
-	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp -o CMakeFiles/ggml.dir/ggml-backend-reg.cpp.s
+	cd /Users/mattialoszach/Documents/Code/shelly/build/third_party/whisper.cpp/ggml/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mattialoszach/Documents/Code/shelly/third_party/whisper.cpp/ggml/src/ggml-backend-reg.cpp -o CMakeFiles/ggml.dir/ggml-backend-reg.cpp.s
 
 # Object files for target ggml
 ggml_OBJECTS = \

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <filesystem>
 #include <thread>
 #include <chrono>
 #include <cstdlib>
@@ -16,6 +17,12 @@
 #include "SystemPrompt.hpp"
 #include "TerminalUI.hpp"
 
+// File/Config Setup Helper Functions
+bool exists(const std::string& p) {
+    return std::filesystem::exists(p);
+}
+
+// Whisper Model Quiet Logger
 static void ggml_quiet_logger(enum ggml_log_level level, const char* msg, void*) {
     if (level >= GGML_LOG_LEVEL_ERROR) {
         fputs(msg, stderr);
@@ -49,6 +56,17 @@ bool isEnter(int k) {
     return (k == '\n') || (k == '\r');
 }
 
+// Resolve model path from installed share dir, then local models/
+static std::string resolveModelPath(const std::string& wanted) {
+#ifdef DEFAULT_SHELLY_SHARE_DIR
+    {
+        std::string p = std::string(DEFAULT_SHELLY_SHARE_DIR) + "/models/" + wanted;
+        if (exists(p)) return p;
+    }
+#endif
+    return std::string("models/") + wanted;
+}
+
 int main(int argc, char** argv) {
     bool mute = false;
 
@@ -65,7 +83,7 @@ int main(int argc, char** argv) {
 
     ggml_log_set(ggml_quiet_logger, nullptr);
     whisper_log_set(ggml_quiet_logger, nullptr);
-    std::string modelPath_Whisper = "models/ggml-base.en.bin";
+    std::string modelPath_Whisper = resolveModelPath("ggml-base.en.bin");
     
     const int sr = 16000; // Sampling rate
     Recorder rec(sr, 1);

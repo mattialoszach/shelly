@@ -14,6 +14,7 @@ set(CMAKE_ASM_COMPILER_ID "AppleClang")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_ASM
+  "DEFAULT_SHELLY_SHARE_DIR=\"/usr/local/share/shelly\""
   "GGML_BACKEND_BUILD"
   "GGML_BACKEND_SHARED"
   "GGML_METAL_EMBED_LIBRARY"

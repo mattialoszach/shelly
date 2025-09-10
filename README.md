@@ -15,7 +15,6 @@ Shelly is my simple, local “shell Siri.” Press Enter to record, speak, get a
 > Note: currently tested on macOS only. The TTS is tailored to macOS’ system `say`.
 
 <img src="img/img1.png" alt="Screenshot" width="600">
-<img src="img/img2.png" alt="Screenshot" width="600">
 <img src="img/img3.png" alt="Screenshot" width="600">
 
 ## 🛠️ Setup & Build
